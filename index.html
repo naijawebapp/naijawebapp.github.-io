@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Acme web design | welcome</title>
-  <!-- <link rel="stylesheet" href="css/style.css">
+    <title>Weather | welcome</title>
+    <!-- <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile-style.css"> -->
     <meta name="theme-color" content="#0e3979">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -17,275 +17,368 @@
 
 
     <style>
-        
-@media(max-width:520px){
-  body{display: block;}
-header nav {
-    display: none
-    
-} 
-
-.branding h1{
-    float:left
-}
-html {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
-    font-size: 15px;
-    line-height: 1.3;
-    overflow-x: hidden;
-}
-body{font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  padding: 0px; margin: 0px;
-  }
-  body {
-    background-color:rgb(46, 9, 211)55);
-    color:#333
-}
-
-
-input{
-    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
-
-  width:80%;
-  margin:3px 0px;
-  padding:auto;
-  align-content: center;
-  height: 30px;
-  border: 1px solid #fff;
-  text-align:center;
-    border-radius: 5px;
+        @media(max-width:520px) {
+            body {
+                display: block;
+            }
+
+            header nav {
+                display: none
+            }
+
+            .branding h1 {
+                float: left
+            }
+
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+                font-size: 15px;
+                line-height: 1.3;
+                overflow-x: hidden;
+            }
+
+            body {
+                font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            body {
+                background-color: rgb(46, 9, 211)55);
+                color: #333
+            }
+
+
+            input {
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+
+
+                width: 80%;
+                margin: 3px 0px;
+                padding: auto;
+                align-content: center;
+                height: 30px;
+                border: 1px solid #fff;
+                text-align: center;
+                border-radius: 5px;
+
+            }
+
+            button {
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+                width: 80%;
+                margin: 3px 0px;
+                padding: auto;
+                align-content: center;
+                border-radius: 5px;
+            }
+
+
+            /*text-align: center;*/
+
+            /*global*/
+            .container {
+                width: 85%;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .container-text {
+                width: 95%;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .text-box {
+                box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
+
+                background-color: #fff;
+                padding: 0px;
+                height: auto;
+                border-radius: 0.3em;
+
+            }
+
+            /*header*/
+            header {
+                background-color: #0e3979;
+                z-index: 2;
+                color: #fff;
+                padding-top: 10px;
+                min-height: 45px;
+
+                width: 100%;
+                position: fixed;
+                box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .12), 0 7px 10px -5px rgba(0, 0, 0, .15);
+
+
+            }
+
+            header a {
+                color: #ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            header ul {
+                margin: 10px;
+                padding: 0px;
+                /*float: right*/
+                ;
+            }
+
+            header li {
+                float: left;
+                display: inline;
+                padding: 10px 20px 0px 20px;
+            }
+
+            /*header .branding{float:left;}*/
+
+            header .branding h2 {
+                margin-top: 3px;
+                padding: 0px;
+                display: inline;
+                float: left;
+                vertical-align: center
+            }
+
+            header nav {
+                float: right;
+            }
+
+            header .highlight,
+            header .current a {
+                color: #e8491d;
+                font-weight: bold;
+            }
+
+            header a:hover {
+                color: #e8491d;
+                font-weight: bold;
+                /*text-transform: lowercase;*/
+            }
+
+            /*showcase*/
+
+            #showcase {
+                min-height: 420px;
+                /*background: url("images/cloud2.jpg") no-repeat 0 -800px;*/
+                background-image: url(cloud3.jpg);
+                background-position: fixed;
+                background-size: cover;
+                text-align: center;
+                color: #ffffff;
+                padding-top: 30vh
+            }
+
+            #showcase h1 {
+                margin-top: 100px;
+                font-size: 55px;
+                margin-bottom: 10px;
+            }
+
+            #showcase a {
+                color: #ffffff;
+                text-decoration: none
+            }
+
+            #showcase a:hover {
+                color: #e8491;
+                font-size: 56px;
+            }
+
+
+            footer {
+                padding: 3px;
+                margin-top: 0px;
+                color: #ffffff;
+                background: #0e3979;
+                text-align: center;
+            }
+
+
+
+
+
+
+
+
+            #showcase p {
+                font-size: 16px;
+                font-style: italic;
+            }
 
-}
-button{
-    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
+            #newsletter {
+                padding: 0px;
+                color: #ffffff;
+                background: #35424a
+            }
 
-  width:80%;
-  margin:3px 0px;  
-  padding:auto;
-  align-content: center;
-  border-radius: 5px;
-}
+            #newsletter h1 {
+                float: left;
+            }
 
+            #newsletter form {
+                float: right;
+                margin-top: 15px;
+                font-family: cursive;
+            }
 
-/*text-align: center;*/
+            #newsletter input[type="email"] {
+                padding: 4px;
+                height: 25px;
+                width: 250px;
+                font-family: cursive;
+                text-align: center;
+            }
 
-/*global*/
-.container{width: 85%;
-  margin: auto;
-  overflow: hidden;}
+            .button_1 {
+                height: 38px;
+                background: #e8491d;
+                border: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: #ffffff;
+            }
 
-.container-text{width: 95%;
-  margin: auto;
-  overflow: hidden;}
+            /*boxes*/
 
-  .text-box{
-    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
+            #boxes {
+                margin-top: 20px;
+            }
 
-      background-color: #fff;
-      padding:0px;
-        height: auto;
-        border-radius: 0.3em;
+            #boxes .box {
+                float: left;
+                text-align: center;
+                width: 30%;
+                padding: 10px;
+            }
 
-  }
 
-/*header*/
-header{background-color:#0e3979 ; z-index:2;
-  color: #fff;
-  padding-top: 10px;
-  min-height:50px;
-  
-  width:100%;
-  position: fixed;
-    
-}
 
-header a{color: #ffffff;
-  text-decoration:none;
-  text-transform: uppercase;}
+            /*----------------------ABOUT------------------------*/
+            /*---------------------ABOUT----------------------------*/
+            /*-------------------ABOUT-----------------------------*/
+            /*------------------------------------------------------*/
 
-header ul{margin: 10px;
-  padding: 0px; /*float: right*/;}
+            /*sidebar*/
 
-header li{float: left;
-  display: inline;
-  padding: 10px 20px 0px 20px;}
+            aside {
+                float: right;
+                width: 30%;
+                margin-top: 10px;
+            }
 
-/*header .branding{float:left;}*/
+            /*main-col*/
 
-header .branding h2{margin:0px; padding: 0px; display: inline; float: left; vertical-align: center}
+            article .main-col {
+                float: left;
+                width: 65%;
+            }
 
-header nav{float:right;}
+            .dark {
+                padding: 15px;
+                background: #35424a;
+                color: #ffffff;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
 
-header .highlight, header .current a{ color: #e8491d;
-  font-weight: bold;}
 
-  header a:hover{color:#e8491d;
-  font-weight: bold;/*text-transform: lowercase;*/}
+            /*----------------------Services------------------------*/
+            /*---------------------Services----------------------------*/
+            /*-------------------services-----------------------------*/
+            /*-------------------services-----------------------------*/
 
-  /*showcase*/
-  
-#showcase {min-height: 420px;
-  /*background: url("images/cloud2.jpg") no-repeat 0 -800px;*/
-  background-image: url(cloud3.jpg);
-  background-position:fixed;
-  background-size: cover;
-text-align: center;
-color:#ffffff; 
-padding-top: 30vh}
 
-#showcase h1{margin-top:100px;
-font-size: 55px;
-margin-bottom: 10px;}
 
-#showcase a{color: #ffffff; text-decoration: none}
+            .services li {
+                list-style: none;
+                padding: 20px;
+                border: 1px solid #cccccc;
+                margin-bottom: 5px;
+                background: #e6e6e6;
+            }
 
-#showcase a:hover{color: #e8491; font-size: 56px;}
+        }
 
 
-footer{padding: 3px;
-margin-top: 0px;
-color:#ffffff;
-background: #0e3979 ;
-text-align: center;}
 
 
 
 
 
+        /*----------------------Services------------------------*/
+        /*---------------------Services----------------------------*/
+        /*-------------------services-----------------------------*/
+        /*-------------------services-----------------------------*/
 
 
+        @media(max-width:958px) {
 
-#showcase p{font-size: 16px; font-style: italic;}
+            /*body{display: none;}*/
+            header .branding,
+            header nav,
+            header nav li,
+            #newsletter h1,
+            #newsletter form,
+            #boxes .box,
+            article .main-col,
+            aside .sidebar {
+                float: none;
+                text-align: center;
+                width: 100%;
 
-#newsletter{padding: 0px;
-color: #ffffff;
-background: #35424a}
+            }
 
-#newsletter h1{float: left;}
+            aside .sidebar {
+                float: none;
+                text-align: center;
+                width: 200%;
+            }
 
-#newsletter form{float: right;
-margin-top: 15px; font-family: cursive;}
 
-#newsletter input[type="email"]{padding: 4px;
-height: 25px; width: 250px; font-family: cursive; text-align: center;}
 
-.button_1{height:38px;
-background: #e8491d;
-border: 0px;
-padding-left: 20px;
-padding-right: 20px;
-color: #ffffff;
-}
+            header,
+            form,
+                {
+                padding-bottom: 10px;
 
-/*boxes*/
+            }
 
-#boxes{margin-top: 20px;}
+            #showcase h1 {
+                margin-top: 10px
+            }
 
-#boxes .box{float: left;
-text-align: center;
-width: 30%;
-padding: 10px;
-}
+            #newsletter button {
+                display: inline;
+                width: 100%;
+                margin-bottom: 10px
+            }
 
+            #newsletter form input[type=email] {
+                width: 100%;
+                margin-bottom: 5px;
+            }
 
 
-/*----------------------ABOUT------------------------*/
-/*---------------------ABOUT----------------------------*/
-/*-------------------ABOUT-----------------------------*/
-/*------------------------------------------------------*/
+        }
 
-/*sidebar*/
-
-aside{
-  float: right;
-  width: 30%;
-  margin-top: 10px;}
-
-  /*main-col*/
-
-article .main-col{float: left; width: 65%;}
-
-.dark{padding: 15px;
-background: #35424a;
-color: #ffffff;
-margin-top: 10px;
-margin-bottom: 10px;}
-
-
-/*----------------------Services------------------------*/
-/*---------------------Services----------------------------*/
-/*-------------------services-----------------------------*/
-/*-------------------services-----------------------------*/
-
-
-
-.services li{list-style: none;
-padding: 20px;
-border: 1px solid #cccccc;
-margin-bottom: 5px;
-background: #e6e6e6;}
-
-}
-
-
-
-
-
-
-
-/*----------------------Services------------------------*/
-/*---------------------Services----------------------------*/
-/*-------------------services-----------------------------*/
-/*-------------------services-----------------------------*/
-
-
-@media(max-width:958px){
-  /*body{display: none;}*/
-  header .branding,
-  header nav,
-  header nav li,
-  #newsletter h1,
-  #newsletter form,
-  #boxes .box,
-  article .main-col,
-aside .sidebar{float: none;
-    text-align: center;
-    width: 100%;
-
-  }
-
-  aside .sidebar{float: none;
-      text-align: center;
-      width: 200%;}
-
-
-
-  header, form , {padding-bottom: 10px;
-
-}
-
-#showcase h1{margin-top: 10px}
-
-#newsletter button{display: inline;
-  width: 100%; margin-bottom: 10px
-}
-
-#newsletter form input[type=email]{width: 100%;
-margin-bottom: 5px;}
-
-
-}
         #more {
-            display: none;}
+            display: none;
+        }
     </style>
-    
+
 </head>
 
 <body style="z-index: -1">
 
-<!--<iframe height="100%" width="100%"src="popup/index.html" frameborder="0"></iframe> -->
+    <!--<iframe height="100%" width="100%"src="popup/index.html" frameborder="0"></iframe> -->
 
 
     <header>
@@ -319,17 +412,19 @@ margin-bottom: 5px;}
 
         </div>
     </section>
-    <div class="container" style="background-color:#0e3979 ; opacity: 0.8; margin:0px; width:auto; padding: 10px; color:#fff">
+    <div class="container"
+        style="background-color:#0e3979 ; opacity: 0.8; margin:0px; width:auto; padding: 10px; color:#fff">
         <center>
             <h2>Subscribe to the news newsletter</h2>
-     
-        <form class="" action="index.html" method="post">
-            <input type="email" name="" value="" placeholder="Enter Your E-mail">
-            <button class="button_1" style="background-color: #0e3979; border:1px solid #fff" type="button" name="button"><b>S</b>ubscribe</button>
-        </form>
+
+            <form class="" action="index.html" method="post">
+                <input type="email" name="" value="" placeholder="Enter Your E-mail">
+                <button class="button_1" style="background-color: #0e3979; border:1px solid #fff" type="button"
+                    name="button"><b>S</b>ubscribe</button>
+            </form>
         </center>
     </div>
-<br>
+    <br>
     <!-- <section id="newsletter">
         <div class="container">
         <center>   <h1>Subscribe to our news newsletter</h1> </center>
@@ -345,15 +440,17 @@ margin-bottom: 5px;}
         <br><br>
         <center>
             <h3>
-            EARLY WARNING SYSTEMS FOR FLOOD OCCURENCES IN THE OGUN &ndash; OSUN RIVER BASIN, SOUTH WEST
-                    NIGERIA
-                </h3>
+                EARLY WARNING SYSTEMS FOR FLOOD OCCURENCES IN THE OGUN &ndash; OSUN RIVER BASIN, SOUTH WEST
+                NIGERIA
+            </h3>
         </center>
 
         <br><br>
 
         <img src="image1.png" width="100%" t="">
-<center> <p>Figure 1: Illustration of WRF-Hydro model system</p> </center>
+        <center>
+            <p>Figure 1: Illustration of WRF-Hydro model system</p>
+        </center>
         <p>When run in an offline or &lsquo;uncoupled&rsquo; mode, WRF-Hydro must read in the meteorological forcing
             data
             necessary to perform land surface model calculations and it contains the necessary routines to do this.
@@ -394,12 +491,17 @@ margin-bottom: 5px;}
 
         <p>&nbsp;</p>
 
+    </div>
+    <div class="container-text">
 
-        <div class="text-box">
+        <div class="text-box"
+            style="padding:10px;background-color: #0e3979;color:#fff; clip-path:polygon(0 0, 100% 0%, 100% 97%, 0% 100%)">
 
-            <ol>
-                <li><strong>Computer requirements</strong></li>
-            </ol>
+            <h2>
+                <ol>
+                    <li><strong>Computer requirements</strong></li>
+                </ol>
+            </h2>
             <p>The WRF-Hydro has been developed on a LINUX-based computing platform using Portland Group, gfort and
                 ifort
                 FORTRAN90
@@ -435,14 +537,20 @@ margin-bottom: 5px;}
                 been fully
                 parallelized to run on high performance computing systems</p>
 
-
+            <br>
         </div>
 
         <br><br>
-        <div class="text-box">
-            <ol start="2">
-                <li><strong>Data requirement</strong></li>
-            </ol>
+
+        <div class="text-box"
+            style="padding:10px;background-color: #0e3979;color:#fff; clip-path:polygon(0 2%, 100% 0%, 100% 97%, 0% 100%)">
+
+            <br>
+            <h2>
+                <ol start="2">
+                    <li><strong>Data requirement</strong></li>
+                </ol>
+            </h2>
             <p>Either of GFS or ERA-interim will be used as initial gridded data</p>
             <p>Input files needed:</p>
             <p>Standard WRF-Noah/NoahMP LSM grids (geogrid.exe))</p>
@@ -486,60 +594,70 @@ margin-bottom: 5px;}
                 <li>NCO-based shell scripts to change variable names, threshold units, re-order grids, etc</li>
                 <li>HRLDAS tools for preparing forcing with topographic adjustment</li>
             </ul>
+            <br>
         </div>
 
 
         <br>
+        <div class="text-box"
+            style="padding:10px;background-color: #0e3979;color:#fff; clip-path:polygon(0 4%, 100% 0%, 100% 100%, 0% 100%)">
 
-        <div>
-
+            <p>&nbsp;</p>
+            <h2>
+                <ol start="3">
+                    <li><strong>Model setup</strong></li>
+                </ol>
+            </h2>
+            <p>The WRF-Hydro would be run as a fully coupled model to predict and forecast some hydrological processes
+                such
+                as
+                surface runoff, channel flow, lake/reservoir flow, sub-surface flow and land-atmosphere exchanges. The
+                potential
+                skill of the model to forecast flood would be examined based on precipitation inputs derived from the
+                Weather
+                Research and Forecasting (WRF) model. The Global Forecasting System (GFS) products would be used as
+                initial
+                input to
+                drive the WRF model. Although, precipitation from models could possess some systematic errors that are
+                associated to
+                initial conditions and physical parametization but a sensitivity study would be carried out to calibrate
+                the
+                model
+                so as to reduce the effect of such error.</p>
+            <p>4.1 Numerical configuration</p>
+            <p>The National Center for Atmospheric Research (NCAR) Weather Research and Forecasting (WRF) model version
+                3.9
+                would be
+                used as a common framework to host the different model physics combinations. The WRF model consist of
+                different
+                model physics such as microphysics (MP), cumulus parameterization (CU), planetary boundary layer (PBL),
+                surface
+                layer (SL), land surface (LS), and shortwave and longwave radiation (RAD). Each of these physics has
+                different
+                parameterization schemes that describe the various complex sub-grid scale processes that cannot be
+                represented
+                by
+                the model resolution. Some schemes would be selected from MP, CU and PBL physics. Comprehensive
+                descriptions
+                of
+                the
+                schemes can be found in Skamarock <em>et al.</em> (2008). The choice of selection is due to the fact
+                that
+                the
+                physics schemes are not only linked with moisture transport and redistribution in the atmosphere but
+                they
+                also
+                use
+                different approach to represent a specific processes in the atmosphere (Klein <em>et al.</em>, 2015).
+                Appropriate
+                parent domain covering large region of Nigeria at 15km resolution would be used to host a nested
+                domains.
+                The
+                nested
+                domain will focus on Ogun/Osun catchment area at 4km horizontal resolution.</p>
         </div>
-        <p>&nbsp;</p>
-        <ol start="3">
-            <li><strong>Model setup</strong></li>
-        </ol>
-        <p>The WRF-Hydro would be run as a fully coupled model to predict and forecast some hydrological processes such
-            as
-            surface runoff, channel flow, lake/reservoir flow, sub-surface flow and land-atmosphere exchanges. The
-            potential
-            skill of the model to forecast flood would be examined based on precipitation inputs derived from the
-            Weather
-            Research and Forecasting (WRF) model. The Global Forecasting System (GFS) products would be used as initial
-            input to
-            drive the WRF model. Although, precipitation from models could possess some systematic errors that are
-            associated to
-            initial conditions and physical parametization but a sensitivity study would be carried out to calibrate the
-            model
-            so as to reduce the effect of such error.</p>
-        <p>4.1 Numerical configuration</p>
-        <p>The National Center for Atmospheric Research (NCAR) Weather Research and Forecasting (WRF) model version 3.9
-            would be
-            used as a common framework to host the different model physics combinations. The WRF model consist of
-            different
-            model physics such as microphysics (MP), cumulus parameterization (CU), planetary boundary layer (PBL),
-            surface
-            layer (SL), land surface (LS), and shortwave and longwave radiation (RAD). Each of these physics has
-            different
-            parameterization schemes that describe the various complex sub-grid scale processes that cannot be
-            represented
-            by
-            the model resolution. Some schemes would be selected from MP, CU and PBL physics. Comprehensive descriptions
-            of
-            the
-            schemes can be found in Skamarock <em>et al.</em> (2008). The choice of selection is due to the fact that
-            the
-            physics schemes are not only linked with moisture transport and redistribution in the atmosphere but they
-            also
-            use
-            different approach to represent a specific processes in the atmosphere (Klein <em>et al.</em>, 2015).
-            Appropriate
-            parent domain covering large region of Nigeria at 15km resolution would be used to host a nested domains.
-            The
-            nested
-            domain will focus on Ogun/Osun catchment area at 4km horizontal resolution.</p>
 
-
-
+<br><br><br>
         <img src="image2.jpg" width="100%" t="">
 
         <p>Figure 2: Map of Nigeria showing the different River Basin development authorities</p>
@@ -602,8 +720,8 @@ margin-bottom: 5px;}
 
 
 
-    
-<!--
+
+    <!--
         <h2>Read More Read Less Button</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
             lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor.
@@ -637,19 +755,19 @@ margin-bottom: 5px;}
 
 
 
-        <!-- Start WOWSlider.com -->
-        <iframe src="weather.html"
-            style="width:100%;height:100vh;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;"
-            marginheight="0" marginwidth="0"></iframe>
-        <!-- End WOWSlider.com -->
+    <!-- Start WOWSlider.com -->
+    <iframe src="weather.html"
+        style="width:100%;height:100vh;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;"
+        marginheight="0" marginwidth="0"></iframe>
+    <!-- End WOWSlider.com -->
 
-        <footer>
-            <p>Weather, Copyright &Copy; 2018</p>
+    <footer>
+        <p>Weather, Copyright &Copy; 2018</p>
 
-        </footer>
+    </footer>
 
 
 
-    </body>
+</body>
 
 </html>
