@@ -1,0 +1,253 @@
+
+@media(max-width:520px){
+  /*body{display: none;}*/
+header nav {
+    display: none
+    
+} 
+
+.branding h1{
+    float:left
+}
+html {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+body{font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0px; margin: 0px;
+  }
+  body {
+    background-color:rgb(46, 9, 211)55);
+    color:#333
+}
+
+
+input{
+  width:80%;
+  margin:3px 0px;
+  padding:auto;
+  align-content: center;
+  height: 30px;
+  border: 1px solid #fff;
+  text-align:center
+}
+button{
+  width:80%;
+  margin:3px 0px;  
+  padding:auto;
+  align-content: center;
+  border-radius: 2px;
+}
+
+
+/*text-align: center;*/
+
+/*global*/
+.container{width: 85%;
+  margin: auto;
+  overflow: hidden;}
+
+.container-text{width: 95%;
+  margin: auto;
+  overflow: hidden;}
+
+  .text-box{
+    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
+
+      background-color: #fff;
+      padding:0px;
+        height: auto;
+        border-radius: 0.3em;
+
+  }
+
+/*header*/
+header{background-color: #fff;
+  color: #fff;
+  padding-top: 10px;
+  min-height:50px;
+  border-bottom:  1px solid #fff;
+  width:100%;
+  position: fixed;
+    
+}
+
+header a{color: #ffffff;
+  text-decoration:none;
+  text-transform: uppercase;}
+
+header ul{margin: 10px;
+  padding: 0px; /*float: right*/;}
+
+header li{float: left;
+  display: inline;
+  padding: 10px 20px 0px 20px;}
+
+/*header .branding{float:left;}*/
+
+header .branding h2{margin:0px; padding: 0px; display: inline; float: left; vertical-align: center}
+
+header nav{float:right;}
+
+header .highlight, header .current a{ color: #e8491d;
+  font-weight: bold;}
+
+  header a:hover{color:#e8491d;
+  font-weight: bold;/*text-transform: lowercase;*/}
+
+  /*showcase*/
+  
+#showcase {min-height: 500px;
+  /*background: url("images/cloud2.jpg") no-repeat 0 -800px;*/
+  background-image: url(images/cloud2.jpg);
+  background-size: cover;
+text-align: center;
+color:#ffffff; 
+padding-top: 10vh}
+
+#showcase h1{margin-top:100px;
+font-size: 55px;
+margin-bottom: 10px;}
+
+#showcase a{color: #ffffff; text-decoration: none}
+
+#showcase a:hover{color: #e8491; font-size: 56px;}
+
+
+footer{padding: 3px;
+margin-top: 0px;
+color:#ffffff;
+background: #e8491d;
+text-align: center;}
+
+
+
+
+
+
+
+
+#showcase p{font-size: 16px; font-style: italic;}
+
+#newsletter{padding: 0px;
+color: #ffffff;
+background: #35424a}
+
+#newsletter h1{float: left;}
+
+#newsletter form{float: right;
+margin-top: 15px; font-family: cursive;}
+
+#newsletter input[type="email"]{padding: 4px;
+height: 25px; width: 250px; font-family: cursive; text-align: center;}
+
+.button_1{height:38px;
+background: #e8491d;
+border: 0px;
+padding-left: 20px;
+padding-right: 20px;
+color: #ffffff;
+font-family:cursive;}
+
+/*boxes*/
+
+#boxes{margin-top: 20px;}
+
+#boxes .box{float: left;
+text-align: center;
+width: 30%;
+padding: 10px;
+}
+
+
+
+/*----------------------ABOUT------------------------*/
+/*---------------------ABOUT----------------------------*/
+/*-------------------ABOUT-----------------------------*/
+/*------------------------------------------------------*/
+
+/*sidebar*/
+
+aside{
+  float: right;
+  width: 30%;
+  margin-top: 10px;}
+
+  /*main-col*/
+
+article .main-col{float: left; width: 65%;}
+
+.dark{padding: 15px;
+background: #35424a;
+color: #ffffff;
+margin-top: 10px;
+margin-bottom: 10px;}
+
+
+/*----------------------Services------------------------*/
+/*---------------------Services----------------------------*/
+/*-------------------services-----------------------------*/
+/*-------------------services-----------------------------*/
+
+
+
+.services li{list-style: none;
+padding: 20px;
+border: 1px solid #cccccc;
+margin-bottom: 5px;
+background: #e6e6e6;}
+
+}
+
+
+
+
+
+
+
+/*----------------------Services------------------------*/
+/*---------------------Services----------------------------*/
+/*-------------------services-----------------------------*/
+/*-------------------services-----------------------------*/
+
+
+@media(max-width:958px){
+  /*body{display: none;}*/
+  header .branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article .main-col,
+aside .sidebar{float: none;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  aside .sidebar{float: none;
+      text-align: center;
+      width: 200%;}
+
+
+
+  header, form , {padding-bottom: 10px;
+
+}
+
+#showcase h1{margin-top: 10px}
+
+#newsletter button{display: inline;
+  width: 100%; margin-bottom: 10px
+}
+
+#newsletter form input[type=email]{width: 100%;
+margin-bottom: 5px;}
+
+
+}
