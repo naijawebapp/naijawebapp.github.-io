@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Acme web design | welcome</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile-style.css">
-    <meta name="theme-color" content="green">
+  <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-style.css"> -->
+    <meta name="theme-color" content="#0e3979">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
+<script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -17,18 +17,272 @@
 
 
     <style>
+        
+@media(max-width:520px){
+  body{display: block;}
+header nav {
+    display: none
+    
+} 
+
+.branding h1{
+    float:left
+}
+html {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+body{font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0px; margin: 0px;
+  }
+  body {
+    background-color:rgb(46, 9, 211)55);
+    color:#333
+}
+
+
+input{
+  width:80%;
+  margin:3px 0px;
+  padding:auto;
+  align-content: center;
+  height: 30px;
+  border: 1px solid #fff;
+  text-align:center
+}
+button{
+  width:80%;
+  margin:3px 0px;  
+  padding:auto;
+  align-content: center;
+  border-radius: 2px;
+}
+
+
+/*text-align: center;*/
+
+/*global*/
+.container{width: 85%;
+  margin: auto;
+  overflow: hidden;}
+
+.container-text{width: 95%;
+  margin: auto;
+  overflow: hidden;}
+
+  .text-box{
+    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
+
+      background-color: #fff;
+      padding:0px;
+        height: auto;
+        border-radius: 0.3em;
+
+  }
+
+/*header*/
+header{background-color:#0e3979 ; z-index:2;
+  color: #fff;
+  padding-top: 10px;
+  min-height:50px;
+  
+  width:100%;
+  position: fixed;
+    
+}
+
+header a{color: #ffffff;
+  text-decoration:none;
+  text-transform: uppercase;}
+
+header ul{margin: 10px;
+  padding: 0px; /*float: right*/;}
+
+header li{float: left;
+  display: inline;
+  padding: 10px 20px 0px 20px;}
+
+/*header .branding{float:left;}*/
+
+header .branding h2{margin:0px; padding: 0px; display: inline; float: left; vertical-align: center}
+
+header nav{float:right;}
+
+header .highlight, header .current a{ color: #e8491d;
+  font-weight: bold;}
+
+  header a:hover{color:#e8491d;
+  font-weight: bold;/*text-transform: lowercase;*/}
+
+  /*showcase*/
+  
+#showcase {min-height: 400px;
+  /*background: url("images/cloud2.jpg") no-repeat 0 -800px;*/
+  background-image: url(cloud3.jpg);
+  background-position:fixed;
+  background-size: cover;
+text-align: center;
+color:#ffffff; 
+padding-top: 30vh}
+
+#showcase h1{margin-top:100px;
+font-size: 55px;
+margin-bottom: 10px;}
+
+#showcase a{color: #ffffff; text-decoration: none}
+
+#showcase a:hover{color: #e8491; font-size: 56px;}
+
+
+footer{padding: 3px;
+margin-top: 0px;
+color:#ffffff;
+background: #0e3979 ;
+text-align: center;}
+
+
+
+
+
+
+
+
+#showcase p{font-size: 16px; font-style: italic;}
+
+#newsletter{padding: 0px;
+color: #ffffff;
+background: #35424a}
+
+#newsletter h1{float: left;}
+
+#newsletter form{float: right;
+margin-top: 15px; font-family: cursive;}
+
+#newsletter input[type="email"]{padding: 4px;
+height: 25px; width: 250px; font-family: cursive; text-align: center;}
+
+.button_1{height:38px;
+background: #e8491d;
+border: 0px;
+padding-left: 20px;
+padding-right: 20px;
+color: #ffffff;
+font-family:cursive;}
+
+/*boxes*/
+
+#boxes{margin-top: 20px;}
+
+#boxes .box{float: left;
+text-align: center;
+width: 30%;
+padding: 10px;
+}
+
+
+
+/*----------------------ABOUT------------------------*/
+/*---------------------ABOUT----------------------------*/
+/*-------------------ABOUT-----------------------------*/
+/*------------------------------------------------------*/
+
+/*sidebar*/
+
+aside{
+  float: right;
+  width: 30%;
+  margin-top: 10px;}
+
+  /*main-col*/
+
+article .main-col{float: left; width: 65%;}
+
+.dark{padding: 15px;
+background: #35424a;
+color: #ffffff;
+margin-top: 10px;
+margin-bottom: 10px;}
+
+
+/*----------------------Services------------------------*/
+/*---------------------Services----------------------------*/
+/*-------------------services-----------------------------*/
+/*-------------------services-----------------------------*/
+
+
+
+.services li{list-style: none;
+padding: 20px;
+border: 1px solid #cccccc;
+margin-bottom: 5px;
+background: #e6e6e6;}
+
+}
+
+
+
+
+
+
+
+/*----------------------Services------------------------*/
+/*---------------------Services----------------------------*/
+/*-------------------services-----------------------------*/
+/*-------------------services-----------------------------*/
+
+
+@media(max-width:958px){
+  /*body{display: none;}*/
+  header .branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article .main-col,
+aside .sidebar{float: none;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  aside .sidebar{float: none;
+      text-align: center;
+      width: 200%;}
+
+
+
+  header, form , {padding-bottom: 10px;
+
+}
+
+#showcase h1{margin-top: 10px}
+
+#newsletter button{display: inline;
+  width: 100%; margin-bottom: 10px
+}
+
+#newsletter form input[type=email]{width: 100%;
+margin-bottom: 5px;}
+
+
+}
         #more {
             display: none;}
     </style>
     
 </head>
 
-<body>
+<body style="z-index: -1">
 
 <!--<iframe height="100%" width="100%"src="popup/index.html" frameborder="0"></iframe> -->
 
 
-    <header style="background-color:#0e3979 ; opacity: 0.8">
+    <header>
         <div class="container">
             <div class="branding">
                 <h2> Weather</h2>
@@ -65,7 +319,7 @@
      
         <form class="" action="index.html" method="post">
             <input type="email" name="" value="" placeholder="Enter Your E-mail">
-            <button class="button_1" type="button" name="button"><b>S</b>ubscribe</button>
+            <button class="button_1" style="background-color: #0e3979; border:1px solid #fff" type="button" name="button"><b>S</b>ubscribe</button>
         </form>
         </center>
     </div>
@@ -82,17 +336,18 @@
 -->
 
     <div class="container-text">
+        <br><br>
         <center>
-            <p>
-                <strong>EARLY WARNING SYSTEMS FOR FLOOD OCCURENCES IN THE OGUN &ndash; OSUN RIVER BASIN, SOUTH WEST
-                    NIGERIA</strong>
-            </p>
+            <h3>
+            EARLY WARNING SYSTEMS FOR FLOOD OCCURENCES IN THE OGUN &ndash; OSUN RIVER BASIN, SOUTH WEST
+                    NIGERIA
+                </h3>
         </center>
 
-        <br>
+        <br><br>
 
         <img src="images/image1.png" width="100%" t="">
-        <p>Figure 1: Illustration of WRF-Hydro model system</p>
+<center> <p>Figure 1: Illustration of WRF-Hydro model system</p> </center>
         <p>When run in an offline or &lsquo;uncoupled&rsquo; mode, WRF-Hydro must read in the meteorological forcing
             data
             necessary to perform land surface model calculations and it contains the necessary routines to do this.
@@ -341,8 +596,8 @@
 
 
 
-    <body>
-
+    
+<!--
         <h2>Read More Read Less Button</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
             lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor.
@@ -371,21 +626,24 @@
                 }
             }
         </script>
-
+-->
 
 
 
 
         <!-- Start WOWSlider.com -->
         <iframe src="weather.html"
-            style="width:100%;height:70vh;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;"
+            style="width:100%;height:100vh;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;"
             marginheight="0" marginwidth="0"></iframe>
         <!-- End WOWSlider.com -->
 
         <footer>
-            <p>Bosseth Web Design, Copyright &Copy; 2018</p>
+            <p>Weather, Copyright &Copy; 2018</p>
 
         </footer>
+
+
+
     </body>
 
 </html>
